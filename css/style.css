@@ -359,6 +359,18 @@ h3 {
   font-family: "Roboto", sans-serif;
 }
 
+main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+
+.galerie {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+
 @keyframes néon {
   0% {
     opacity: 0;
@@ -495,7 +507,7 @@ h3 {
   }
 }
 .loading {
-  background-color: #000000da;
+  background-color: #000000e7;
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -581,8 +593,8 @@ h3 {
 .button {
   background: linear-gradient(-20deg, #9356DC, #FF79DA);
   padding: 16px;
-  margin-left: 22%;
-  margin-right: 15%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 60px;
   border-radius: 50px;
   width: 55%;
@@ -816,16 +828,13 @@ h3 {
 
 @media screen and (min-width: 430px) {
   .loading__logo, h1 {
-    margin-top: 25%;
+    margin-top: 30%;
+    font-size: 200%;
   }
 
   .button {
     width: 33%;
     margin-left: 34%;
-  }
-
-  .galerie .fonction {
-    margin-left: 50px;
   }
 
   .groupB {
@@ -841,6 +850,7 @@ h3 {
     margin-left: 8%;
     margin-right: 8%;
     width: 83%;
+    min-width: 300px;
   }
   .galerie2 .new {
     margin-left: 75%;
@@ -854,10 +864,19 @@ h3 {
 
   .loading__logo, h1 {
     margin-top: 13%;
+    font-size: 250%;
   }
 
   .groupB {
     margin-right: 10%;
+  }
+
+  .galerie .fonction {
+    margin-left: 140px;
+  }
+
+  .restaurants {
+    margin-left: 140px;
   }
 
   .galerie2 {
@@ -875,8 +894,14 @@ h3 {
   }
   .galerie2 .item {
     width: 35%;
+    max-width: 500px;
+    height: 300px;
     margin-left: 2%;
     margin-right: 3%;
+  }
+
+  .footer .logo2 {
+    width: 300px;
   }
 }
 
