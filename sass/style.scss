@@ -531,8 +531,9 @@
 }
 @media screen and (min-width: 769px){
   .logo{
-    padding-left: 30%;
-    padding-right: 30%;
+    min-width: 700px;
+    padding-left: 40%;
+    padding-right: 40%;
   }
   .loading__logo,h1{
     margin-top: 13%;
