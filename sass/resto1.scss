@@ -171,7 +171,6 @@
 
     .conteneur__item{
         background-color: white;
-        padding: 10px;
         margin-left: 3%;
         border-radius: 20px;
         box-shadow: 2px 2px 5px rgb(187, 187, 187);
@@ -221,7 +220,6 @@
 
     .conteneur__item2{
         background-color: white;
-        padding: 10px;
         margin-left: 3%;
         border-radius: 20px;
         box-shadow: 2px 2px 5px rgb(187, 187, 187);
@@ -239,6 +237,7 @@
             }
             .item__add{
                 width: 60px;
+                flex-direction:unset;
             }
             .fa-check-circle{
                 display:unset;
@@ -252,7 +251,6 @@
 
     .conteneur__item3{
         background-color: white;
-        padding: 10px;
         margin-left: 3%;
         border-radius: 20px;
         box-shadow: 2px 2px 5px rgb(187, 187, 187);
@@ -283,7 +281,6 @@
 
     .conteneur__item4{
         background-color: white;
-        padding: 10px;
         margin-left: 3%;
         border-radius: 20px;
         box-shadow: 2px 2px 5px rgb(187, 187, 187);
@@ -316,14 +313,17 @@
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 2px;
+    padding-left: 10px;
+    padding-top: 10px;
     font-size: 19px;
 }
 
     .item__sous-nom{
         margin-bottom: 5px;
         margin-left: 2px;
+        padding-left: 10px;
+        padding-bottom: 10px;
         display: flex;
-        justify-content: space-between;
     
         .item--sous-nom{
             text-overflow: ellipsis;
@@ -334,7 +334,6 @@
     .item__prix{
         margin-left: 10px;
         margin-right: 20px;
-        position: absolute;
         right: 0;
         transition:1s;
     } 
@@ -482,4 +481,9 @@
         margin-left: 10%;
         margin-top: -50px;
     }
+    .footer{
+        .footer__logo{
+          width: 250px;
+        }
+      }
 }

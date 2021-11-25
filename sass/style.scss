@@ -531,12 +531,11 @@
 }
 @media screen and (min-width: 769px){
   .logo{
-    min-width: 700px;
-    padding-left: 40%;
-    padding-right: 40%;
+    padding-left: 35%;
+    padding-right: 35%;
   }
   .loading__logo,h1{
-    margin-top: 13%;
+    margin-top: 15%;
     font-size: 250%;
   }
   .groupB{
@@ -566,7 +565,7 @@
 
     .item{
       width: 35%;
-      max-width: 500px;
+      min-width: 380px;
       height: 300px;
       margin-left: 2%;
       margin-right: 3%;
@@ -574,7 +573,7 @@
   }
   .footer{
     .logo2{
-      width: 300px;
+      width: 250px;
     }
   }
 }

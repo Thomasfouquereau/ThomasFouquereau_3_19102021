@@ -511,7 +511,6 @@ h3 {
 }
 .conteneur__galerie .conteneur__item {
   background-color: white;
-  padding: 10px;
   margin-left: 3%;
   border-radius: 20px;
   box-shadow: 2px 2px 5px #bbbbbb;
@@ -551,7 +550,6 @@ h3 {
 }
 .conteneur__galerie .conteneur__item2 {
   background-color: white;
-  padding: 10px;
   margin-left: 3%;
   border-radius: 20px;
   box-shadow: 2px 2px 5px #bbbbbb;
@@ -566,6 +564,7 @@ h3 {
 }
 .conteneur__galerie .conteneur__item2:hover .item__add {
   width: 60px;
+  flex-direction: unset;
 }
 .conteneur__galerie .conteneur__item2:hover .fa-check-circle {
   display: unset;
@@ -576,7 +575,6 @@ h3 {
 }
 .conteneur__galerie .conteneur__item3 {
   background-color: white;
-  padding: 10px;
   margin-left: 3%;
   border-radius: 20px;
   box-shadow: 2px 2px 5px #bbbbbb;
@@ -601,7 +599,6 @@ h3 {
 }
 .conteneur__galerie .conteneur__item4 {
   background-color: white;
-  padding: 10px;
   margin-left: 3%;
   border-radius: 20px;
   box-shadow: 2px 2px 5px #bbbbbb;
@@ -628,14 +625,17 @@ h3 {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 2px;
+  padding-left: 10px;
+  padding-top: 10px;
   font-size: 19px;
 }
 
 .item__sous-nom {
   margin-bottom: 5px;
   margin-left: 2px;
+  padding-left: 10px;
+  padding-bottom: 10px;
   display: flex;
-  justify-content: space-between;
 }
 .item__sous-nom .item--sous-nom {
   text-overflow: ellipsis;
@@ -645,7 +645,6 @@ h3 {
 .item__sous-nom .item__prix {
   margin-left: 10px;
   margin-right: 20px;
-  position: absolute;
   right: 0;
   transition: 1s;
 }
@@ -783,6 +782,10 @@ h3 {
     width: 20%;
     margin-left: 10%;
     margin-top: -50px;
+  }
+
+  .footer .footer__logo {
+    width: 250px;
   }
 }
 
