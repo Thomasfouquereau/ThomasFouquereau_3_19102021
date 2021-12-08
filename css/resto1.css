@@ -410,6 +410,12 @@ h3 {
   font-family: "Roboto", sans-serif;
 }
 
+.conteneur__galerie, .button {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+}
+
 /****************logo****************/
 .logo {
   width: 100%;
@@ -447,7 +453,7 @@ h3 {
   position: absolute;
   margin-top: 28px;
   margin-left: 5%;
-  font-size: 25px;
+  font-size: 22px;
   color: black;
   transform: scale(1);
   transition: transforme 400ms;
@@ -469,7 +475,7 @@ h3 {
 }
 .conteneur__galerie .conteneur__nom1 {
   font-family: "Shrikhand", cursive;
-  font-size: 25px;
+  font-size: 20px;
 }
 .conteneur__galerie .conteneur__nom {
   font-weight: bold;
@@ -481,7 +487,7 @@ h3 {
   text-decoration: none;
 }
 .conteneur__galerie .conteneur__nom .fa-heart {
-  font-size: 25px;
+  font-size: 23px;
   margin-right: 6%;
   text-decoration: none;
   border-color: black;
@@ -502,7 +508,7 @@ h3 {
 .conteneur__galerie .conteneur__sous-nom {
   margin-top: 40px;
   padding-bottom: 5px;
-  margin-right: 85%;
+  margin-right: 80%;
   margin-left: 20px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -510,115 +516,160 @@ h3 {
   border-bottom: #99E2D0 3px solid;
 }
 .conteneur__galerie .conteneur__item {
+  display: flex;
   background-color: white;
   margin-left: 3%;
   border-radius: 20px;
   box-shadow: 2px 2px 5px #bbbbbb;
   margin-right: 3%;
   margin-bottom: 20px;
+  justify-content: flex-end;
+  animation: apparition 1s ease-in-out 0.3s backwards;
+}
+.conteneur__galerie .conteneur__item:hover .btn {
+  width: 17%;
   display: flex;
-  flex-direction: column;
-  position: relative;
-  animation: apparition 1.4s ease-in-out 0s backwards;
-}
-.conteneur__galerie .conteneur__item:hover .conteneur__item {
-  width: 90%;
-}
-.conteneur__galerie .conteneur__item:hover .item__add {
-  width: 60px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
 }
 .conteneur__galerie .conteneur__item:hover .fa-check-circle {
-  display: unset;
+  color: white;
   animation: check 1s ease 0s 1 normal forwards;
 }
-.conteneur__galerie .conteneur__item:hover .item__prix {
-  transform: translateX(-220%);
+.conteneur__galerie .conteneur__item:hover .content {
+  width: 83%;
 }
-.conteneur__galerie .item__add {
+.conteneur__galerie .conteneur__item .btn {
+  background-color: #99E2D0;
+  width: 0;
+  height: auto;
+  transition: 0.7s;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.conteneur__galerie .content {
+  border-radius: 20px;
+  height: 100%;
+  position: relative;
+  transition: 0.7s;
+  width: 100%;
+}
+.conteneur__galerie .price {
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+  margin-left: 10px;
+  transform: translateX(-2px);
+  top: 60%;
+}
+.conteneur__galerie .btn {
   width: 0;
   height: 100%;
   transition: 1s;
   background-color: #99E2D0;
-  transform: translateY(-60%);
 }
-.conteneur__galerie .item__add .fa-check-circle {
-  display: none;
-  background-color: #99E2D0;
-  padding-left: 40%;
+.conteneur__galerie .btn .fa-check-circle {
+  color: rgba(255, 255, 255, 0);
+}
+.conteneur__galerie .conteneur__item2 {
+  display: flex;
+  background-color: white;
+  margin-left: 3%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px #bbbbbb;
+  margin-right: 3%;
+  margin-bottom: 20px;
+  justify-content: flex-end;
+  animation: apparition 1.2s ease-in-out 0.4s backwards;
+}
+.conteneur__galerie .conteneur__item2:hover .btn {
+  width: 17%;
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+.conteneur__galerie .conteneur__item2:hover .fa-check-circle {
   color: white;
   animation: check 1s ease 0s 1 normal forwards;
 }
-.conteneur__galerie .conteneur__item2 {
-  background-color: white;
-  margin-left: 3%;
-  border-radius: 20px;
-  box-shadow: 2px 2px 5px #bbbbbb;
-  margin-right: 3%;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  animation: apparition 1.2s ease-in-out 0.4s backwards;
+.conteneur__galerie .conteneur__item2:hover .content {
+  width: 83%;
 }
-.conteneur__galerie .conteneur__item2:hover .conteneur__item {
-  width: 90%;
-}
-.conteneur__galerie .conteneur__item2:hover .item__add {
-  width: 60px;
-  flex-direction: unset;
-}
-.conteneur__galerie .conteneur__item2:hover .fa-check-circle {
-  display: unset;
-  animation: check 1s ease 0s 1 normal forwards;
-}
-.conteneur__galerie .conteneur__item2:hover .item__prix {
-  transform: translateX(-220%);
+.conteneur__galerie .conteneur__item2 .btn {
+  background-color: #99E2D0;
+  width: 0;
+  height: auto;
+  transition: 0.7s;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .conteneur__galerie .conteneur__item3 {
+  display: flex;
   background-color: white;
   margin-left: 3%;
   border-radius: 20px;
   box-shadow: 2px 2px 5px #bbbbbb;
   margin-right: 3%;
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   animation: apparition 1s ease-in-out 0.8s backwards;
 }
-.conteneur__galerie .conteneur__item3:hover .conteneur__item {
-  width: 90%;
-}
-.conteneur__galerie .conteneur__item3:hover .item__add {
-  width: 60px;
+.conteneur__galerie .conteneur__item3:hover .btn {
+  width: 17%;
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
 }
 .conteneur__galerie .conteneur__item3:hover .fa-check-circle {
-  display: unset;
+  color: white;
   animation: check 1s ease 0s 1 normal forwards;
 }
-.conteneur__galerie .conteneur__item3:hover .item__prix {
-  transform: translateX(-220%);
+.conteneur__galerie .conteneur__item3:hover .content {
+  width: 83%;
+}
+.conteneur__galerie .conteneur__item3 .btn {
+  background-color: #99E2D0;
+  width: 0;
+  height: auto;
+  transition: 0.7s;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .conteneur__galerie .conteneur__item4 {
+  display: flex;
   background-color: white;
   margin-left: 3%;
   border-radius: 20px;
   box-shadow: 2px 2px 5px #bbbbbb;
   margin-right: 3%;
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   animation: apparition 0.99s ease-in-out 1s backwards;
 }
-.conteneur__galerie .conteneur__item4:hover .conteneur__item {
-  width: 90%;
-}
-.conteneur__galerie .conteneur__item4:hover .item__add {
-  width: 60px;
+.conteneur__galerie .conteneur__item4:hover .btn {
+  width: 17%;
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
 }
 .conteneur__galerie .conteneur__item4:hover .fa-check-circle {
-  display: unset;
+  color: white;
+  animation: check 1s ease 0s 1 normal forwards;
 }
-.conteneur__galerie .conteneur__item4:hover .item__prix {
-  transform: translateX(-220%);
+.conteneur__galerie .conteneur__item4:hover .content {
+  width: 83%;
+}
+.conteneur__galerie .conteneur__item4 .btn {
+  background-color: #99E2D0;
+  width: 0;
+  height: auto;
+  transition: 0.7s;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .item__nom {
@@ -627,26 +678,27 @@ h3 {
   margin-left: 2px;
   padding-left: 10px;
   padding-top: 10px;
-  font-size: 19px;
-}
-
-.item__sous-nom {
-  margin-bottom: 5px;
-  margin-left: 2px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  display: flex;
-}
-.item__sous-nom .item--sous-nom {
+  font-size: 17px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-.item__sous-nom .item__prix {
+
+.item--sous-nom {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.item__prix {
   margin-left: 10px;
   margin-right: 20px;
   right: 0;
   transition: 1s;
+  white-space: nowrap;
 }
 
 .button {
@@ -780,12 +832,39 @@ h3 {
 
   .button {
     width: 20%;
-    margin-left: 10%;
+    margin-left: 40%;
+    margin-right: auto;
     margin-top: -50px;
   }
 
   .footer .footer__logo {
     width: 250px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .fond-1 {
+    background-color: #f5f4f4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 255, 0), #f5f4f4), url(../asset-img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  }
+
+  .fond-2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 255, 0), white), url(../asset-img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  }
+
+  .fond-3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 255, 0), white), url(../asset-img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  }
+
+  .fond-4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 255, 0), white), url(../asset-img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   }
 }
 
