@@ -833,6 +833,14 @@ main {
   padding-right: 40%;
   position: absolute;
 }
+.galerie2 .item--txt .sous_nom {
+  font-size: 18px;
+  margin-left: 10px;
+  margin-top: 5px;
+  bottom: 10px;
+  padding-right: 40%;
+  position: absolute;
+}
 .galerie2 .item--txt .fa_heart, .galerie2 .item--txt button {
   z-index: 1;
   position: absolute;
