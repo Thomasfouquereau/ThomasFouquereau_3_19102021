@@ -101,6 +101,7 @@
         }
     }
 
+ 
     .conteneur__sous-nom{
         margin-top: 40px;
         padding-bottom:5px ;
@@ -151,25 +152,25 @@
             transition: 0.7s;
             border-bottom-right-radius: 20px;
             border-top-right-radius: 20px;
-            
           }
     }
       
       .content {
+        display: flex;
+        justify-content: space-between; 
         border-radius: 20px;
         height: 100%;
         position: relative;
         transition: 0.7s;
         width: 100%;
       }
-
+      .item__prix{
+        margin-top: 20px;
+      }
       .price {
-        position: absolute;
-        right: 0;
         margin-right: 15px;
         margin-left: 10px;
-        transform: translateX(-2px);
-        top: 60%;
+        margin-top: 20px;
       }
 
     .btn{

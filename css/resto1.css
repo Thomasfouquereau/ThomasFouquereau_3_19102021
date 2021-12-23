@@ -682,19 +682,21 @@ h3 {
   border-top-right-radius: 20px;
 }
 .conteneur__galerie .content {
+  display: flex;
+  justify-content: space-between;
   border-radius: 20px;
   height: 100%;
   position: relative;
   transition: 0.7s;
   width: 100%;
 }
+.conteneur__galerie .item__prix {
+  margin-top: 20px;
+}
 .conteneur__galerie .price {
-  position: absolute;
-  right: 0;
   margin-right: 15px;
   margin-left: 10px;
-  transform: translateX(-2px);
-  top: 60%;
+  margin-top: 20px;
 }
 .conteneur__galerie .btn {
   width: 0;
