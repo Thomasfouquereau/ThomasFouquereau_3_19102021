@@ -143,6 +143,12 @@
       
           .content {
             width: 83%;
+            display: flex;
+          }
+          .content__nom{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
           }
         }
         .btn {
@@ -152,6 +158,7 @@
             transition: 0.7s;
             border-bottom-right-radius: 20px;
             border-top-right-radius: 20px;
+            display: flex;
           }
     }
       
@@ -160,7 +167,6 @@
         justify-content: space-between; 
         border-radius: 20px;
         height: 100%;
-        position: relative;
         transition: 0.7s;
         width: 100%;
       }
@@ -168,9 +174,10 @@
         margin-top: 20px;
       }
       .price {
+        display: flex;
         margin-right: 15px;
-        margin-left: 10px;
-        margin-top: 20px;
+        margin-top: 34px;
+        font-size: 13px;
       }
 
     .btn{
@@ -213,6 +220,11 @@
             .content {
               width: 83%;
             }
+            .content__nom{
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+            }
           }
           .btn {
               background-color: #99E2D0;
@@ -251,6 +263,11 @@
             .content {
               width: 83%;
             }
+            .content__nom{
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+            }
           }
           .btn {
               background-color: #99E2D0;
@@ -288,6 +305,11 @@
             .content {
               width: 83%;
             }
+            .content__nom{
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+            }
           }
           .btn {
               background-color: #99E2D0;
@@ -304,7 +326,7 @@
     margin-bottom: 5px;
     margin-left: 12px;
     padding-top: 5px;
-    font-size: 17px;
+    font-size: 15px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -312,7 +334,7 @@
 .item--sous-nom{
     margin-left: 12px;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 12px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;

@@ -574,8 +574,8 @@ main {
   animation-iteration-count: unset;
   font-family: "Shrikhand", cursive;
   width: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 50%;
+  transform: translateY(-50%);
   text-shadow: 100px 0 100px;
   position: absolute;
   animation: néon 4s linear both;
